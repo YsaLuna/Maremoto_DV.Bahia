@@ -1,0 +1,31 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731794750
+icon.svg::CompressedTexture2D::5538504611389618749::1731735332::1731794093::1::::<><>::
+Inicio.tscn::PackedScene::4172601987439318064::1731792833::0::1::::<><>::
+level.gd::GDScript::-1::1731790852::0::1::::<>Node<>::
+level.tscn::PackedScene::1439719151645502245::1731793715::0::1::::<><>::uid://dwgiomtsuqg7t::::res://Player1/player.tscn<>res://level.gd<>uid://cqvy6nxry263o::::res://Assets2/Serene_Village_16x16.png<>uid://cpcwy6lb2y4ec::::res://neighbor.tscn
+neighbor.tscn::PackedScene::5831183055658583630::1731792973::0::1::::<><>::uid://ck55mkg1f3ntt::::res://icon.svg<>res://neightbor.gd
+neightbor.gd::GDScript::-1::1731790595::0::1::::<>Node2D<>::
+player.tscn::PackedScene::5835082495295988793::1731794707::0::1::::<><>::res://Player1/player.gd<>res://Player1/WITH_FX/spr_axe_strip10.png<>res://Player1/WITH_FX/spr_carry_strip8.png<>res://Player1/WITH_FX/spr_dig_strip13.png<>res://Player1/WITH_FX/spr_idle_strip9.png<>res://Player1/WITH_FX/spr_jump_strip9.png<>res://Player1/WITH_FX/spr_run_strip8.png
+vecino.tscn::PackedScene::8653812526948875085::1731792973::0::1::::<><>::res://neightbor.gd<>uid://ck55mkg1f3ntt::::res://icon.svg
+::res://Assets2/::1731794093
+Serene_Village_16x16.png::CompressedTexture2D::5940728085007048186::1731735332::1731794093::1::::<><>::
+::res://Assets2/Animated stuff/::1731794093
+campfire_16x16.png::CompressedTexture2D::3605996756815479636::1731735332::1731794093::1::::<><>::
+door_16x16.png::CompressedTexture2D::174600437061317395::1731735332::1731794093::1::::<><>::
+water_waves_16x16.png::CompressedTexture2D::1624865372376584040::1731735332::1731794093::1::::<><>::
+::res://Assets2/Construct 3/::1731794093
+Autotiles_no_inner_corners_16x16.png::CompressedTexture2D::3965774887137724498::1731735332::1731794093::1::::<><>::
+::res://Assets2/RPG_MAKER_MV/::1731794094
+!$Campfire.png::CompressedTexture2D::586586634347423209::1731735332::1731794093::1::::<><>::
+!$door.png::CompressedTexture2D::8379554222336845468::1731735332::1731794093::1::::<><>::
+Houses_TILESET_B-C-D-E.png::CompressedTexture2D::9046307040390099100::1731735332::1731794094::1::::<><>::
+Outside_Stuff_TILESET_B-C-D-E.png::CompressedTexture2D::5713120013784940678::1731735332::1731794094::1::::<><>::
+Terrains_TILESET_B-C-D-E.png::CompressedTexture2D::1831760571852327009::1731735332::1731794093::1::::<><>::
+::res://Assets2/RPG_MAKER_VX_ACE/::1731794094
+B-C-D-E_Serene_Village_01.png::CompressedTexture2D::4428434637303387411::1731735332::1731794093::1::::<><>::
+B-C-D-E_Serene_Village_02.png::CompressedTexture2D::8020842744711298560::1731735332::1731794093::1::::<><>::
+B-C-D-E_Serene_Village_03.png::CompressedTexture2D::7985464313766406473::1731735332::1731794093::1::::<><>::
+::res://Assets2/RPG_MAKER_XP/::1731794094
+Serene_Village_XP.png::CompressedTexture2D::921468379930487446::1731735332::1731794094::1::::<><>::
+::res://Player/::1731794750

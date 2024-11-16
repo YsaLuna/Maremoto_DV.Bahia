@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpcwy6lb2y4ec"]
+
+[ext_resource type="Texture2D" uid="uid://ck55mkg1f3ntt" path="res://icon.svg" id="1_51ydn"]
+[ext_resource type="Script" path="res://neightbor.gd" id="1_da0jf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyt4q"]
+size = Vector2(128, 127)
+
+[node name="Neighbor" type="Node2D"]
+script = ExtResource("1_da0jf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 1
+shape = SubResource("RectangleShape2D_wyt4q")
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_51ydn")
