@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731762517
+::res://::1731768040
 icon.svg::CompressedTexture2D::5538504611389618749::1731735332::1731735450::1::::<><>::
-Inicio.tscn::PackedScene::4172601987439318064::1731736052::0::1::::<><>::
-Mate.tscn::PackedScene::6006951772903515467::1731762517::0::1::::<><>::
-::res://Assets1/::1731761890
+Inicio.tscn::PackedScene::4172601987439318064::1731765546::0::1::::<><>::
+Mate.tscn::PackedScene::6006951772903515467::1731768040::0::1::::<><>::uid://dygvuwlexj5yv::::res://Assets1/TileSets Trabajado/TileSet.png<>uid://cqvy6nxry263o::::res://Assets2/Serene_Village_16x16.png
+::res://Assets1/::1731766952
 Read Me.txt::TextFile::-1::1731561744::0::1::::<><>::
 ::res://Assets1/512x512/::1731761890
 ::res://Assets1/512x512/Bricks/::1731761894
@@ -136,24 +136,7 @@ Wood_22-512x512.png::CompressedTexture2D::5394346716284003601::1620452115::17317
 Wood_23-512x512.png::CompressedTexture2D::7106361662498972210::1620452179::1731761893::1::::<><>::
 Wood_24-512x512.png::CompressedTexture2D::7777952014375250006::1620452192::1731761893::1::::<><>::
 Wood_25-512x512.png::CompressedTexture2D::3072579781329939102::1620452422::1731761893::1::::<><>::
-::res://Assets1/Props/::1731735719
-Bush.png::CompressedTexture2D::6436202003123606872::1731572426::1731735719::1::::<><>::
-Flower.png::CompressedTexture2D::1002620830538202221::1731572509::1731735719::1::::<><>::
-Grass.png::CompressedTexture2D::1783818089461864289::1731572566::1731735719::1::::<><>::
-Other.png::CompressedTexture2D::4086951834771634943::1731572603::1731735719::1::::<><>::
-Props-All.png::CompressedTexture2D::5631749515714393258::1731573160::1731735719::1::::<><>::
-Stone and Rock.png::CompressedTexture2D::3214060582976262410::1731572653::1731735719::1::::<><>::
-Texture.png::CompressedTexture2D::7248970719926896616::1731572673::1731735719::1::::<><>::
-Tree.png::CompressedTexture2D::7912275617567853573::1731572700::1731735719::1::::<><>::
-Water Plants.png::CompressedTexture2D::339803221621015761::1731572711::1731735719::1::::<><>::
-::res://Assets1/Tileset/::1731735719
-Dirt - simplified.png::CompressedTexture2D::3082603993574540066::1730978365::1731735719::1::::<><>::
-Fall - simplified.png::CompressedTexture2D::297853398998252790::1731573018::1731735719::1::::<><>::
-Spring - simplified.png::CompressedTexture2D::6437015234995603009::1731572964::1731735719::1::::<><>::
-Summer - simplified.png::CompressedTexture2D::5605733307141670724::1731572987::1731735719::1::::<><>::
-Tufts and Lumps.png::CompressedTexture2D::4017989643326566230::1731573053::1731735719::1::::<><>::
-Winter - simplified.png::CompressedTexture2D::3271298911591370316::1731573003::1731735719::1::::<><>::
-::res://Assets1/TileSets Trabajado/::1731735930
+::res://Assets1/TileSets Trabajado/::1731765424
 TileSet.png::CompressedTexture2D::8857492510362051125::1731765424::1731765424::1::::<><>::
 ::res://Assets2/::1731735450
 Serene_Village_16x16.png::CompressedTexture2D::5940728085007048186::1731735332::1731735450::1::::<><>::
@@ -175,3 +158,26 @@ B-C-D-E_Serene_Village_02.png::CompressedTexture2D::8020842744711298560::1731735
 B-C-D-E_Serene_Village_03.png::CompressedTexture2D::7985464313766406473::1731735332::1731735450::1::::<><>::
 ::res://Assets2/RPG_MAKER_XP/::1731735450
 Serene_Village_XP.png::CompressedTexture2D::921468379930487446::1731735332::1731735450::1::::<><>::
+::res://SUNNYSIDE_WORLD_GOBLIN_V0.1/::1731768014
+::res://SUNNYSIDE_WORLD_GOBLIN_V0.1/GIF/::1731768014
+::res://SUNNYSIDE_WORLD_GOBLIN_V0.1/PNG/::1731768015
+spr_attack_strip10.png::CompressedTexture2D::4241974154505827301::1619823885::1731768044::1::::<><>::
+spr_axe_strip10.png::CompressedTexture2D::5168655991609745774::1619823700::1731768044::1::::<><>::
+spr_carry_strip8.png::CompressedTexture2D::8190256773448954949::1619823507::1731768044::1::::<><>::
+spr_casting_strip15.png::CompressedTexture2D::818165076294501035::1619823910::1731768044::1::::<><>::
+spr_caught_strip10.png::CompressedTexture2D::5708619026396483144::1619823976::1731768044::1::::<><>::
+spr_death_strip13.png::CompressedTexture2D::5282288011781030935::1619823614::1731768044::1::::<><>::
+spr_dig_strip13.png::CompressedTexture2D::3585925178589612445::1619824006::1731768044::1::::<><>::
+spr_doing_strip8.png::CompressedTexture2D::2437641284758213395::1619823633::1731768044::1::::<><>::
+spr_hammering_strip23.png::CompressedTexture2D::8812534439772826132::1619823833::1731768044::1::::<><>::
+spr_hurt_strip8.png::CompressedTexture2D::2212094463192912988::1619823597::1731768044::1::::<><>::
+spr_idle_strip9.png::CompressedTexture2D::7051267348071169437::1619823536::1731768044::1::::<><>::
+spr_jump_strip9.png::CompressedTexture2D::3193441064606637570::1619823665::1731768044::1::::<><>::
+spr_mining_strip10.png::CompressedTexture2D::5829223097607114291::1619823719::1731768044::1::::<><>::
+spr_reeling_strip13.png::CompressedTexture2D::4201934769398260771::1619823949::1731768044::1::::<><>::
+spr_roll_strip10.png::CompressedTexture2D::5507315581729531416::1619823685::1731768044::1::::<><>::
+spr_run_strip8.png::CompressedTexture2D::4335982432673840508::1619823648::1731768044::1::::<><>::
+spr_swimming_strip12.png::CompressedTexture2D::5677819723687267276::1619823808::1731768044::1::::<><>::
+spr_waiting_strip9.png::CompressedTexture2D::6771187935978783936::1619823926::1731768044::1::::<><>::
+spr_walk_strip8.png::CompressedTexture2D::3061881856791287881::1619823450::1731768044::1::::<><>::
+spr_watering_strip5.png::CompressedTexture2D::8391443480510055189::1619823569::1731768044::1::::<><>::
