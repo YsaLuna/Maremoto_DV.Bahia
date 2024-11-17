@@ -448,8 +448,8 @@ script = ExtResource("1_cdvq4")
 
 [node name="PlayerSprite3" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_upcu3")
-animation = &"Run"
-frame_progress = 0.474513
+animation = &"Idle"
+frame_progress = 0.572301
 
 [node name="HitBox" type="CollisionShape2D" parent="."]
 position = Vector2(0, -2.5)

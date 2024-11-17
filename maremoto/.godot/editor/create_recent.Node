@@ -1,3 +1,8 @@
+Label
+TextureRect
+Button
+VBoxContainer
+ColorRect
 TileMapLayer
 Node2D
 TileMap
