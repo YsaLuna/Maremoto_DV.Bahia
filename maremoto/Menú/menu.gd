@@ -1,13 +1,11 @@
 extends Control
 
-
-
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Nivel1.tscn")
+	get_tree().change_scene_to_file("res://Menú/contexto.tscn")
 
 
 func _on_créditos_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Menú/creditos.tscn")
 
 
 func _on_salir_pressed() -> void:
