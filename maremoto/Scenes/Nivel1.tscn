@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://blleimk3te751"]
+[gd_scene load_steps=27 format=4 uid="uid://blleimk3te751"]
 
 [ext_resource type="Texture2D" uid="uid://i58fj7vhuwag" path="res://TilesMaps/d1779478-43a6-4c0c-af87-5072f36c2683.png" id="1_docjb"]
 [ext_resource type="Script" path="res://Scenes/level1.gd" id="1_lwgxm"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://274111718j15" path="res://Neighbors/neighbornpc.tscn" id="3_skrcx"]
 [ext_resource type="PackedScene" uid="uid://bjqoettbb3e0q" path="res://Neighbors/neighbornpc_2.tscn" id="4_f8smj"]
 [ext_resource type="Texture2D" uid="uid://bg1n1nidm8k6" path="res://Assets/Items/image.png" id="6_bp4uu"]
+[ext_resource type="AudioStream" uid="uid://bjbkbmx1ot546" path="res://Fondo.Music/ENTRE ESCENAS.mp3" id="7_4hf50"]
+[ext_resource type="FontFile" uid="uid://cbyltr3gp6et5" path="res://Menú/PixelifySans-Bold.ttf" id="8_ed0b5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ijuoi"]
 texture = ExtResource("1_docjb")
@@ -1614,6 +1616,15 @@ size = Vector2(10, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ixtpw"]
 size = Vector2(57, 59)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2sek"]
+content_margin_left = 9.0
+content_margin_right = 0.0
+bg_color = Color(1, 1, 1, 0.886275)
+border_width_left = 3
+border_width_top = 4
+corner_radius_top_left = 27
+corner_radius_top_right = 29
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_lwgxm")
 
@@ -1898,3 +1909,30 @@ shape = SubResource("RectangleShape2D_i32wb")
 [node name="FinalPase" type="CollisionShape2D" parent="Final"]
 position = Vector2(2467.5, 578.5)
 shape = SubResource("RectangleShape2D_ixtpw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_4hf50")
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 128.0
+offset_top = 581.0
+offset_right = 244.0
+offset_bottom = 610.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.478431, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_ed0b5")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_w2sek")
+text = "Muevete con \"A W S D\"
+\"Space\" para interactuar"
+horizontal_alignment = 1
+vertical_alignment = 1
