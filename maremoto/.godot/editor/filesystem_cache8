@@ -1,7 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731840731
+::res://::1731841108
 icon.svg::CompressedTexture2D::5538504611389618749::1731796091::1731839130::1::::<><>::
-neighbor_2.gd::GDScript::-1::1731840731::0::1::::<>Node2D<>::
 ::res://Assets/::1731801660
 ::res://Assets/Items/::1731839130
 wood.png::CompressedTexture2D::2113633988074119075::1731796091::1731839130::1::::<><>::
@@ -15,10 +14,11 @@ PixelifySans-Bold.ttf::FontFile::4893278030571650652::1731838444::1731839130::1:
 PixelifySans-Medium.ttf::FontFile::8200198244788041200::1731838444::1731839130::1::::<><>::
 PixelifySans-Regular.ttf::FontFile::6557746949455698765::1731838444::1731839130::1::::<><>::
 PixelifySans-SemiBold.ttf::FontFile::2153002878648140397::1731838444::1731839130::1::::<><>::
-::res://Neighbors/::1731840742
-neighbornpc.tscn::PackedScene::1962967497050547166::1731840742::0::1::::<><>::uid://dhwb54oc2dujn::::res://Neighbors/sprites/base_idle_strip9.png<>res://Neighbors/neighbornpc.gd<>uid://bh28la4dhekqe::::res://Neighbors/sprites/longhair_idle_strip9.png<>uid://dbxssngbgi587::::res://Neighbors/sprites/tools_idle_strip9.png
+::res://Neighbors/::1731840805
 neighbornpc.gd::GDScript::-1::1731840735::0::1::::<>Node2D<>::
-neighbornpc_2.tscn::PackedScene::3052008528917513410::1731840805::0::1::::<><>::res://neighbor_2.gd<>uid://dhwb54oc2dujn::::res://Neighbors/sprites/base_idle_strip9.png<>uid://d21mt6ni1gdh8::::res://Neighbors/sprites/curlyhair_idle_strip9.png<>uid://dbxssngbgi587::::res://Neighbors/sprites/tools_idle_strip9.png
+neighbornpc.tscn::PackedScene::1962967497050547166::1731840742::0::1::::<><>::uid://dhwb54oc2dujn::::res://Neighbors/sprites/base_idle_strip9.png<>res://Neighbors/neighbornpc.gd<>uid://bh28la4dhekqe::::res://Neighbors/sprites/longhair_idle_strip9.png<>uid://dbxssngbgi587::::res://Neighbors/sprites/tools_idle_strip9.png
+neighbornpc_2.tscn::PackedScene::3052008528917513410::1731840805::0::1::::<><>::res://Neighbors/neighbor_2.gd<>uid://dhwb54oc2dujn::::res://Neighbors/sprites/base_idle_strip9.png<>uid://d21mt6ni1gdh8::::res://Neighbors/sprites/curlyhair_idle_strip9.png<>uid://dbxssngbgi587::::res://Neighbors/sprites/tools_idle_strip9.png
+neighbor_2.gd::GDScript::-1::1731840731::0::1::::<>Node2D<>::
 ::res://Neighbors/sprites/::1731839209
 base_idle_strip9.png::CompressedTexture2D::7696116102876267543::1731839208::1731839209::1::::<><>::
 bowlhair_idle_strip9.png::CompressedTexture2D::3095825203727270261::1731839208::1731839209::1::::<><>::
@@ -38,8 +38,8 @@ spr_dig_strip13.png::CompressedTexture2D::528834049180122333::1731804043::173183
 spr_idle_strip9.png::CompressedTexture2D::9066313110034524706::1731804043::1731839130::1::::<><>::
 spr_jump_strip9.png::CompressedTexture2D::6693712974448783402::1731804043::1731839130::1::::<><>::
 spr_run_strip8.png::CompressedTexture2D::5903157022909458777::1731804043::1731839130::1::::<><>::
-::res://Scenes/::1731840742
-Nivel1.tscn::PackedScene::3181463920354443238::1731840742::0::1::::<><>::uid://i58fj7vhuwag::::res://TilesMaps/d1779478-43a6-4c0c-af87-5072f36c2683.png<>uid://cdpfyvc0n3w74::::res://Player/player.tscn<>uid://274111718j15::::res://Neighbors/neighbornpc.tscn<>uid://bjqoettbb3e0q::::res://Neighbors/neighbornpc_2.tscn
+::res://Scenes/::1731840847
+Nivel1.tscn::PackedScene::3181463920354443238::1731840847::0::1::::<><>::uid://i58fj7vhuwag::::res://TilesMaps/d1779478-43a6-4c0c-af87-5072f36c2683.png<>uid://cdpfyvc0n3w74::::res://Player/player.tscn<>uid://274111718j15::::res://Neighbors/neighbornpc.tscn<>uid://bjqoettbb3e0q::::res://Neighbors/neighbornpc_2.tscn
 ::res://TilesMaps/::1731840741
 d1779478-43a6-4c0c-af87-5072f36c2683.png::CompressedTexture2D::625455194565072526::1731796091::1731839130::1::::<><>::
 Tiles.tscn::PackedScene::6583561935949714644::1731840741::0::1::::<><>::uid://i58fj7vhuwag::::res://TilesMaps/d1779478-43a6-4c0c-af87-5072f36c2683.png
