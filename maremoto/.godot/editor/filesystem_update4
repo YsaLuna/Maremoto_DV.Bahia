@@ -1,11 +1,8 @@
 res://Scenes/Nivel1.tscn
-res://Scenes/level1.gd
 res://TilesMaps/Tiles.tscn
 res://Menú/menu.tscn
 res://Menú/creditos.tscn
 res://Neighbors/neighbornpc.tscn
 res://Neighbors/neighbornpc_2.tscn
 res://Player/player.tscn
-res://Player/player.gd
-res://Neighbors/neighbornpc.gd
-res://Neighbors/neighbor_2.gd
+res://Scenes/level1.gd
