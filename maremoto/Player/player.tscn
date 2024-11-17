@@ -457,3 +457,8 @@ shape = SubResource("RectangleShape2D_fw8uw")
 
 [node name="CameraPlayer" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)
+
+[node name="InstructionLabel" type="Label" parent="."]
+offset_left = -115.0
+offset_top = -65.0
+offset_bottom = -42.0
