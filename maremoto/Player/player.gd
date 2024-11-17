@@ -1,16 +1,25 @@
 extends CharacterBody2D
 
 @onready var ANIM_PLAYER = $PlayerSprite
-@onready var axe_timer = $AxeTimer  # Ruta al Timer. Asegúrate de que "AxeTimer" esté correctamente nombrado en tu escena
-var wind_force = -1000  # Fuerza inicial del viento
-var is_event_active = false  # Variable para controlar si un evento está activo
+
+@onready var first_point = $"../Neighbor2/FirstPoint"
+@onready var second_point = $"../Neighbor2/SecondPoint"
+
+var wind_force = -500  # Fuerza inicial del viento
+var is_event_active = false  # Variable para controlar si hay un evento activo
 var current_event = ""  # Nombre del evento actual
 var space_press_count = 0  # Contador de veces que se ha presionado la tecla de espacio
-const SPACE_PRESS_REQUIRED = 5  # Veces necesarias para finalizar el evento
+const SPACE_PRESS_REQUIRED = 5  # Veces necesarias para finalizar el primer evento
+
+# Variables y lógica para el segundo evento
+var first_point_reached = false  # Indica si el primer punto ha sido alcanzado
 
 func _ready():
-	# Conecta la señal "timeout" del temporizador
-	axe_timer.timeout.connect(_on_axe_timer_timeout)
+	pass
+	# Conecta las señales body_entered de los puntos
+	#first_point.body_entered.connect(_on_first_point_entered)
+	#second_point.body_entered.connect(_on_second_point_entered)
+
 
 func _process(_delta: float) -> void:
 	if not is_event_active:
@@ -30,19 +39,11 @@ func _process(_delta: float) -> void:
 		elif Input.is_key_pressed(KEY_D):
 			ANIM_PLAYER.flip_h = false
 	else:
-		# Si el evento está activo, asegura que el `velocity.x` sea 0
-		velocity.x = 0
-
-		# Si el evento está activo, el `Player` se queda en "Idle" y escucha la tecla de espacio
-		if Input.is_action_just_pressed("ui_accept") and !axe_timer.is_stopped():  # Solo permite la acción si el temporizador no está activo
-			space_press_count += 1
-			ANIM_PLAYER.play("Axe", false)  # Reproduce la animación "Axe" sin bucle
-			axe_timer.start()  # Inicia el temporizador
-			print("Tecla espacio presionada:", space_press_count, "/", SPACE_PRESS_REQUIRED)
-
-			# Si se ha presionado la tecla de espacio 5 veces, termina el evento
-			if space_press_count >= SPACE_PRESS_REQUIRED:
-				deactivate_event()
+		# Si un evento está activo, controla cuál se está ejecutando
+		if current_event == "Talar Arbol":
+			handle_first_event()
+		elif current_event == "Llevar Caja":
+			handle_second_event()
 
 	move_and_slide()
 
@@ -57,14 +58,40 @@ func _physics_process(_delta: float) -> void:
 		if Input.is_key_pressed(KEY_D):
 			move_local_x(2)
 
-func activate_event(event_name: String, animation_name: String):
-	print("Evento activado:", event_name)
+# Función para manejar el primer evento: "Talar Arbol"
+func handle_first_event():
+	velocity.x = 0  # Detén el movimiento horizontal
+	if Input.is_action_just_pressed("ui_accept"):
+		space_press_count += 1
+		ANIM_PLAYER.play("Axe")  # Reproduce la animación "Axe"
+		print("Tecla espacio presionada:", space_press_count, "/", SPACE_PRESS_REQUIRED)
+		if space_press_count >= SPACE_PRESS_REQUIRED:
+			deactivate_event()
+
+# Función para manejar el segundo evento: "Llevar Caja"
+func handle_second_event():
+	if Input.is_action_just_pressed("ui_accept"):
+		ANIM_PLAYER.play("Carry")  # Reproduce la animación "Carry"
+
+# Función para activar el primer evento: "Talar Arbol"
+func activate_first_event():
+	print("Evento activado: Talar Arbol")
 	ANIM_PLAYER.play("Idle")  # Cambia a la animación "Idle"
 	wind_force = 0  # Detén el efecto del viento
 	is_event_active = true
-	current_event = event_name
-	space_press_count = 0  # Resetea el contador de teclas presionadas
+	current_event = "Talar Arbol"
+	space_press_count = 0  # Resetea el contador
 
+# Función para activar el segundo evento: "Llevar Caja"
+func activate_second_event():
+	print("Evento activado: Llevar Caja")
+	ANIM_PLAYER.play("Idle")  # Cambia a la animación "Idle"
+	wind_force = 0  # Detén el efecto del viento
+	is_event_active = true
+	current_event = "Llevar Caja"
+	first_point_reached = false  # Resetea el estado del evento
+
+# Función para desactivar cualquier evento activo
 func deactivate_event():
 	print("Evento desactivado:", current_event)
 	is_event_active = false
@@ -72,6 +99,14 @@ func deactivate_event():
 	current_event = ""
 	ANIM_PLAYER.play("Idle")  # Cambia la animación a "Idle"
 
-# Método llamado cuando el temporizador se detiene
-func _on_axe_timer_timeout():
-	print("Animación Axe completa, puedes presionar espacio de nuevo.")
+# Función que se ejecuta cuando se toca el primer punto
+func _on_first_point_entered(area):
+	if not first_point_reached and is_event_active and current_event == "Llevar Caja":
+		first_point_reached = true
+		print("Primer punto alcanzado")
+
+# Función que se ejecuta cuando se toca el segundo punto
+func _on_second_point_entered(area):
+	if first_point_reached and is_event_active and current_event == "Llevar Caja":
+		print("Segundo punto alcanzado, evento completado")
+		deactivate_event()
