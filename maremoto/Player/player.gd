@@ -2,8 +2,6 @@ extends CharacterBody2D
 
 @onready var ANIM_PLAYER = $PlayerSprite
 
-@onready var first_point = $"../Neighbor2/FirstPoint"
-@onready var second_point = $"../Neighbor2/SecondPoint"
 
 var wind_force = -500  # Fuerza inicial del viento
 var is_event_active = false  # Variable para controlar si hay un evento activo
@@ -17,8 +15,6 @@ var first_point_reached = false  # Indica si el primer punto ha sido alcanzado
 func _ready():
 	pass
 	# Conecta las señales body_entered de los puntos
-	#first_point.body_entered.connect(_on_first_point_entered)
-	#second_point.body_entered.connect(_on_second_point_entered)
 
 
 func _process(_delta: float) -> void:

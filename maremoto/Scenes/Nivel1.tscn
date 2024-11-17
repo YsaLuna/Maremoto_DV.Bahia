@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://blleimk3te751"]
+[gd_scene load_steps=7 format=4 uid="uid://blleimk3te751"]
 
 [ext_resource type="Texture2D" uid="uid://i58fj7vhuwag" path="res://TilesMaps/d1779478-43a6-4c0c-af87-5072f36c2683.png" id="1_docjb"]
 [ext_resource type="PackedScene" uid="uid://cdpfyvc0n3w74" path="res://Player/player.tscn" id="2_q5dio"]
+[ext_resource type="PackedScene" uid="uid://274111718j15" path="res://Neighbors/neighbornpc.tscn" id="3_skrcx"]
+[ext_resource type="PackedScene" uid="uid://bjqoettbb3e0q" path="res://Neighbors/neighbornpc_2.tscn" id="4_f8smj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ijuoi"]
 texture = ExtResource("1_docjb")
@@ -1581,3 +1583,11 @@ tile_set = SubResource("TileSet_veqfc")
 
 [node name="Player" parent="." instance=ExtResource("2_q5dio")]
 position = Vector2(88, 647)
+
+[node name="Neighbor" parent="." instance=ExtResource("3_skrcx")]
+position = Vector2(379, 629)
+scale = Vector2(-1, 1)
+
+[node name="Neighbor2" parent="." instance=ExtResource("4_f8smj")]
+position = Vector2(912, 278)
+scale = Vector2(-1, 1)
