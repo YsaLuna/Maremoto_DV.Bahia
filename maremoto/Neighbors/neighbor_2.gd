@@ -10,7 +10,7 @@ func _ready():
 	# Conecta la señal body_entered del Area2D al método _on_area_entered
 	area.body_entered.connect(_on_area_entered)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	ANIM_NEIGHBOR.play("Idle")
 	ANIM_NEIGHBORHAIR.play("Hair")
 	ANIM_NEIGHBORTOOL.play("Tool")

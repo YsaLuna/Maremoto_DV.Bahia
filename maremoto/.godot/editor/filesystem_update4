@@ -8,3 +8,4 @@ res://Neighbors/neighbornpc_2.tscn
 res://Player/player.tscn
 res://Player/player.gd
 res://Neighbors/neighbornpc.gd
+res://Neighbors/neighbor_2.gd
