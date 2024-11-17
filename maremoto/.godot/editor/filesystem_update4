@@ -1,2 +1,3 @@
-res://TilesMaps/tile_map_layer.tscn
+res://Neighbor/neighbor.tscn
+res://Neighbor/neighbor.gd
 res://TilesMaps/Tiles.tscn
