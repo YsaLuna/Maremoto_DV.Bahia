@@ -446,7 +446,7 @@ size = Vector2(20, 19)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_cdvq4")
 
-[node name="PlayerSprite3" type="AnimatedSprite2D" parent="."]
+[node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_upcu3")
 animation = &"Idle"
 frame_progress = 0.572301
@@ -457,5 +457,3 @@ shape = SubResource("RectangleShape2D_fw8uw")
 
 [node name="CameraPlayer" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)
-
-[node name="AxeTimer" type="Timer" parent="."]
