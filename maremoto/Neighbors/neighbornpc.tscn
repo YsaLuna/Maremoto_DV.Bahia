@@ -244,3 +244,9 @@ frame_progress = 0.912929
 sprite_frames = SubResource("SpriteFrames_q1odi")
 animation = &"Tool"
 frame_progress = 0.997916
+
+[node name="Label" type="Label" parent="."]
+offset_left = -27.0
+offset_top = -17.0
+offset_right = 13.0
+offset_bottom = 6.0

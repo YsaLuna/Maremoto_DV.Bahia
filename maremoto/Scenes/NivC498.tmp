@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://blleimk3te751"]
+[gd_scene load_steps=27 format=4 uid="uid://blleimk3te751"]
 
 [ext_resource type="Texture2D" uid="uid://i58fj7vhuwag" path="res://TilesMaps/d1779478-43a6-4c0c-af87-5072f36c2683.png" id="1_docjb"]
 [ext_resource type="Script" path="res://Scenes/level1.gd" id="1_lwgxm"]
@@ -8,8 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://bg1n1nidm8k6" path="res://Assets/Items/image.png" id="6_bp4uu"]
 [ext_resource type="AudioStream" uid="uid://bjbkbmx1ot546" path="res://Fondo.Music/ENTRE ESCENAS.mp3" id="7_4hf50"]
 [ext_resource type="FontFile" uid="uid://cbyltr3gp6et5" path="res://Menú/PixelifySans-Bold.ttf" id="8_ed0b5"]
-[ext_resource type="PackedScene" uid="uid://crynx12pjbif4" path="res://efectos/Spritesheets/Trueno.tscn" id="9_cyw0a"]
-[ext_resource type="PackedScene" uid="uid://cupnvoqj051hy" path="res://efectos/Spritesheets/Viento.tscn" id="9_mde0a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ijuoi"]
 texture = ExtResource("1_docjb")
@@ -1655,6 +1653,7 @@ position = Vector2(359, 613)
 
 [node name="Neighbor2" parent="." instance=ExtResource("4_f8smj")]
 position = Vector2(906, 313)
+scale = Vector2(-1, 1)
 
 [node name="DestinationPoint" type="Area2D" parent="."]
 
@@ -1910,6 +1909,10 @@ shape = SubResource("RectangleShape2D_i32wb")
 position = Vector2(2467.5, 578.5)
 shape = SubResource("RectangleShape2D_ixtpw")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_4hf50")
+autoplay = true
+
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
 anchors_preset = 8
@@ -1932,63 +1935,3 @@ text = "Muevete con \"A W S D\"
 \"Space\" para interactuar"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Hint" type="Label" parent="."]
-offset_left = 279.0
-offset_top = 647.0
-offset_right = 438.0
-offset_bottom = 670.0
-text = "Toca espacio 5 veces"
-
-[node name="Hint2" type="Label" parent="."]
-offset_left = 772.0
-offset_top = 331.0
-offset_right = 866.0
-offset_bottom = 354.0
-text = "Lleva la caja"
-
-[node name="Hint3" type="Label" parent="."]
-offset_left = 2003.0
-offset_top = 506.0
-offset_right = 2097.0
-offset_bottom = 529.0
-text = "Provisiones"
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.501961, 0.501961, 0.501961, 0.784314)
-
-[node name="Efectos" parent="." instance=ExtResource("9_cyw0a")]
-position = Vector2(72, 364)
-
-[node name="Efectos" parent="Efectos" instance=ExtResource("9_cyw0a")]
-position = Vector2(772, -317)
-
-[node name="Efectos" parent="Efectos/Efectos" instance=ExtResource("9_cyw0a")]
-position = Vector2(1106, 285)
-
-[node name="Efectos2" parent="." instance=ExtResource("9_mde0a")]
-position = Vector2(256, 108)
-
-[node name="Efectos2" parent="Efectos2" instance=ExtResource("9_mde0a")]
-position = Vector2(809, -104)
-
-[node name="Efectos2" parent="Efectos2/Efectos2" instance=ExtResource("9_mde0a")]
-position = Vector2(-536, 136)
-
-[node name="Efectos2" parent="Efectos2/Efectos2/Efectos2" instance=ExtResource("9_mde0a")]
-position = Vector2(61, -307)
-
-[node name="Efectos2" parent="Efectos2/Efectos2/Efectos2/Efectos2" instance=ExtResource("9_mde0a")]
-position = Vector2(-708, 400)
-
-[node name="Efectos2" parent="Efectos2/Efectos2/Efectos2/Efectos2/Efectos2" instance=ExtResource("9_mde0a")]
-position = Vector2(1894, -74)
-
-[node name="Efectos2" parent="Efectos2/Efectos2/Efectos2/Efectos2/Efectos2/Efectos2" instance=ExtResource("9_mde0a")]
-position = Vector2(-418, -199)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_4hf50")
-autoplay = true
-
-[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

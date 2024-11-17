@@ -1,8 +1,14 @@
-res://Scenes/Nivel1.tscn
 res://TilesMaps/Tiles.tscn
 res://Menú/menu.tscn
+res://Scenes/Nivel1.tscn
 res://Menú/creditos.tscn
 res://Neighbors/neighbornpc.tscn
 res://Neighbors/neighbornpc_2.tscn
 res://Player/player.tscn
+res://Player/player.gd
+res://Neighbors/neighbornpc.gd
+res://Menú/contexto.tscn
 res://Scenes/level1.gd
+res://Neighbors/neighbor_2.gd
+res://Scenes/storm_effect.gd
+res://efectos/Spritesheets/Viento.tscn

@@ -29,4 +29,9 @@ func _on_player_touched_neighbor2():
 func _on_body_entered(body):
 	if body is CharacterBody2D:  # Verifica si el cuerpo es el jugador
 		# Cambia a la escena "Nivel1"
-		get_tree().change_scene_to_file("res://Scenes/Nivel1.tscn")
+		get_tree().change_scene_to_file("res://Menú/creditos.tscn")
+
+
+func _on_audio_stream_player_finished():
+	$AudioStreamPlayer.play()
+	pass # Replace with function body.
