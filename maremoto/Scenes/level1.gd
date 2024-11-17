@@ -15,6 +15,7 @@ func _on_player_touched_neighbor():
 	# Maneja el evento al colisionar con el primer vecino
 	print("Colisión con el vecino detectada.")
 	player.activate_first_event()  # Activa el evento "Talar Arbol"
+	neighbor.disable_collision()  # Desactiva el área de colisión del vecino
 
 func _on_player_touched_neighbor2():
 	# Maneja el evento al colisionar con el segundo vecino

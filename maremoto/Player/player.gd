@@ -4,6 +4,8 @@ extends CharacterBody2D
 @onready var destination_point = $"../DestinationPoint"  # Ruta al nodo `Area2D` del punto de destino
 @onready var instruction_label = $InstructionLabel  # Ruta directa al nodo `Label` dentro de `Player`
 
+@onready var tree_asset = $"../TreeAsset"  # Cambia la ruta al nodo correcto
+
 var wind_force = -500  # Fuerza inicial del viento
 var is_event_active = false  # Variable para controlar si hay un evento activo
 var current_event = ""  # Nombre del evento actual
@@ -73,6 +75,8 @@ func handle_first_event():
 func handle_second_event():
 	ANIM_PLAYER.play("Carry")  # Cambia a la animación "Carry"
 	update_instruction("Lleva la caja al destino marcado.")
+	wind_force = -2000
+	
 
 # Función para actualizar el texto del `Label`
 func update_instruction(text: String):
@@ -106,8 +110,10 @@ func deactivate_event():
 	current_event = ""
 	ANIM_PLAYER.play("Idle")  # Cambia la animación a "Idle"
 	update_instruction("Evento completado. Usa las teclas WASD para seguir moviéndote.")
+	# Haz que el nodo desaparezca al finalizar el evento
+	tree_asset.visible = false  # Hace que el árbol desaparezca
 
-# Función que se ejecuta cuando se llega al punto de destino
+# Función que se ejecuta cuando se llega al punto	 de destino
 func _on_destination_point_entered(area):
 	if area.name == "Player" and is_event_active and current_event == "Llevar Caja":
 		print("Punto de destino alcanzado, evento completado")
