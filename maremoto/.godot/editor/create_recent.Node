@@ -1,12 +1,13 @@
-Label
 CollisionShape2D
 Area2D
+StaticBody2D
+Node2D
+Label
 AnimatedSprite2D
 TextureRect
 Button
 VBoxContainer
 ColorRect
 TileMapLayer
-Node2D
 TileMap
 ParallaxBackground

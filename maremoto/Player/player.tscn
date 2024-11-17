@@ -444,6 +444,7 @@ animations = [{
 size = Vector2(20, 19)
 
 [node name="Player" type="CharacterBody2D"]
+texture_filter = 1
 script = ExtResource("1_cdvq4")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
